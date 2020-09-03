@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+  <head><title>Bungul Bungul</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+    *{
+      font-family: 'Roboto Mono', monospace;
+    }
+      .center{
+        display:grid;
+        justify-items:center;
+        align-items:center;
+      }
+      body{
+        background-color:#49e;
+      }
+      form{
+        width:calc(25vh + 25vw);
+        background:linear-gradient(to right bottom, #fafafa, #f0f0f0);
+        box-shadow:5px 5px 5px #38d, -5px -5px 5px #38d;
+        overflow:hidden;
+      }
+      input{
+        font-size:1.5em;
+        border:1px #aaa solid;
+        border-radius:2px;
+        max-width:99%;
+      }
+      .button{
+        background-color:#49e;
+        padding:5px;
+        color:white;
+        margin:3px;
+      }
+    </style>
+  </head>
+	<h1>Bungul Bungul</h1>
+  <body class="center">
+      <form method="POST" action="/signup" class="center">
+        <h1>Sign up</h1>
+        <input type="text" placeholder="username" name="name"><br>
+        <input type="password" placeholder="password" name="pw"><br>
+        <a href="/login" style="color:black">Have an account?</a>
+        <br>
+        <div class="button" onclick="this.parentElement.submit()">Sign Up</div>
+      </form>
+  </body>
+</html>
